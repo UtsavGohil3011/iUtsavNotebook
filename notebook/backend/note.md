@@ -6,3 +6,4 @@
 
 ## 3. npm i mongoose
 
+## 3. npm i nodemon
