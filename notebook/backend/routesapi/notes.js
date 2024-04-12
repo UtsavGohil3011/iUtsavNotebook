@@ -117,7 +117,7 @@ router.delete("/deletenotes/:id", fetchUser, async (req, res) => {
         await Notes.findByIdAndDelete(req.params.id);
 
         // Sending a success message as response
-        res.json({ msg: 'Note deleted successfully' });
+         res.json({ msg: 'Note deleted successfully' });
     } catch (err) {
         console.error(err.message);
         res.status(500).send("Server Error"); // If there's an error, send a 500 server error response

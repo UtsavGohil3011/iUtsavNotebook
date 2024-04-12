@@ -9,7 +9,8 @@ connectMongo(); // Call the function to connect to MongoDB
 const app = express();
 
 // Setting up the port
-const port = 3000;
+const port = 5000;
+
 
 // Middleware to parse JSON requests
 app.use(express.json());
