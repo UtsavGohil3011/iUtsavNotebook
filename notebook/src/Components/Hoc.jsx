@@ -2,18 +2,18 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
-function Hoc(Compnent) {
-  function Newcomponent() {
+function Hoc(Component) {
+  function NewComponent() {
     return (
       <>
         <Header />
-        <Compnent />
+        <Component />
         <Footer />
       </>
     );
   }
 
-  return Newcomponent;
+  return NewComponent;
 }
 
 export default Hoc;
