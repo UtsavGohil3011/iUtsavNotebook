@@ -1,29 +1,27 @@
-const connectMongo = require('./db');
-const express = require('express')
+// Importing required modules
+const connectMongo = require('./db'); // Import database connection function
+const express = require('express'); // Import Express framework
 
-connectMongo();
+// Connecting to MongoDB
+connectMongo(); // Call the function to connect to MongoDB
 
+// Creating an instance of Express application
+const app = express();
 
-const app = express()
-const port = 3000
+// Setting up the port
+const port = 3000;
 
-//Available Routes
+// Middleware to parse JSON requests
+app.use(express.json());
 
-app.use('/api/auth', require('./routes/auth'))
-app.use('/api/notes', require('./routes/notes'))
+// Setting up routes
+app.use('/api/auth', require('./routesapi/auth')); // Authentication routes
+app.use('/api/notes', require('./routesapi/notes')); // Routes for managing notes
 
-// app.get('/', (req, res) => {
-//   res.send('Hello World!')
-// })
-
-// app.get('/login', (req, res) => {
-//   res.send('Hello login!')
-// })
-
-// app.get('/signup', (req, res) => {
-//   res.send('Hello signup!')
-// })
-
+// Start listening on the specified port
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+  console.log(`Example app listening on port ${port}...`);
+});
+
+
+
