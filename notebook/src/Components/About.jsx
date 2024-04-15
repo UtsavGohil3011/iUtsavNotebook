@@ -10,5 +10,6 @@ const About = () => {
   );
 }
 
+
 // Exporting the About component wrapped with the "Higher-Order Component"
 export default Hoc(About);
