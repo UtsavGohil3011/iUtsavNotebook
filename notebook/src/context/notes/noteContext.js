@@ -1,5 +1,6 @@
-import { createContext } from 'react';
+import { createContext } from 'react'; // Importing
 
-const noteContext = createContext();   
+// "Creating a context" 
+const noteContext = createContext();
 
-export default noteContext;
+export default noteContext; // Exporting 

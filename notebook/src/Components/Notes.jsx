@@ -7,7 +7,7 @@ import "../App.css"; // Importing CSS styles for the component
 // Functional component `Notes`
 const Notes = () => {
   // Destructuring `notes` and `setNotes` from the context using `useContext` hook
-  const { notes, setNotes } = useContext(NoteContext);
+  const { notes, addNotes } = useContext(NoteContext);
 
   return (
     <div>
