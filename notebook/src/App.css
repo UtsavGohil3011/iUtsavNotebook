@@ -8,4 +8,14 @@
     gap: 3rem;
     justify-content: space-around;
   }
+
+  .footer{
+    background-color: white;
+    height: 6rem;
+  }
+  .text_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
