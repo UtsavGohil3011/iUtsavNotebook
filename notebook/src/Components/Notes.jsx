@@ -8,7 +8,7 @@ import "../App.css"; // Importing CSS styles for the component
 // Functional component `Notes` to display all notes
 const Notes = () => {
   // Destructuring `notes` and `delNote` from the context using `useContext` hook
-  const { notes, delNote } = useContext(NoteContext);
+  const { notes, addNote } = useContext(NoteContext);
 
   return (
     <div>
@@ -18,7 +18,7 @@ const Notes = () => {
         {/* Mapping through each note in the `notes` array */}
         {notes.map((note) => {
           // Returning a `Noteitem` component with each note and onDelete function passed as props
-          return <Noteitem key={note._id} note={note} onDelete={delNote} />;
+          return <Noteitem key={note._id} note={note}  />;
         })}
       </div>
     </div>
